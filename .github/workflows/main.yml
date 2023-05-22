@@ -148,7 +148,7 @@ jobs:
       - name: Push to DockerHub
         uses: docker/build-push-action@v4
         with:
-          context: ./nginx/
+          context: ./gateway/
           push: true
           # Тут вместо username должен быть ваш логин на DockerHub
           tags: we5h/taski_gateway:latest
